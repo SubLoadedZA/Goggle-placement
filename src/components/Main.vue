@@ -72,6 +72,14 @@
           <span class="spinner-border"></span>
           <br />
           <h3>Predicting your Photo</h3>
+          <div>
+            <button
+              class="btn btn-secondary p-2 mt-3"
+              @click="cancelpred"
+            >
+              Cancel
+            </button>
+          </div>
         </div>
         <div class="resultTable" v-if="!loader">
           <div class="inline-row" v-if="pred.length > 0 && image !== ''">
@@ -113,7 +121,14 @@
                   </div>
                   <div>
                     <button
-                      class="btn btn-secondary p-2 mt-3 col-12 border text-center"
+                      class="
+                        btn btn-secondary
+                        p-2
+                        mt-3
+                        col-12
+                        border
+                        text-center
+                      "
                       @click="cancelpred"
                     >
                       Cancel
@@ -156,7 +171,6 @@
 import sidebar from "./sidebar.vue";
 
 export default {
-  
   components: { sidebar },
   data() {
     return {
@@ -173,7 +187,7 @@ export default {
   },
   methods: {
     async PredictData() {
-      const blazeface = require('@tensorflow-models/blazeface');
+      const blazeface = require("@tensorflow-models/blazeface");
       const model = await blazeface.load();
       const img = document.getElementById("imgg");
       const predictions = await model.estimateFaces(img, false);
@@ -277,7 +291,7 @@ export default {
       this.findFaces(val);
     },
     async findFaces(value) {
-      const blazeface = require('@tensorflow-models/blazeface');
+      const blazeface = require("@tensorflow-models/blazeface");
       const model = await blazeface.load();
       const img = document.getElementById("imgg");
       const predictions = await model.estimateFaces(img, false);
@@ -433,7 +447,6 @@ export default {
   font-weight: 600;
 }
 .inputField {
-  width: 50%;
   margin-left: 30px;
 }
 .inputField input {
