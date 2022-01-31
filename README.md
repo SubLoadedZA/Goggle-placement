@@ -6,7 +6,19 @@
 ## What is this for?
 This is a Machine learning Repository which mainly focuses on predecting the human face using npm package ```@tensflow/blazeface```. 
 
+## Models and technologies used.
 
+BlazeFace is a lightweight and well-performing face detector tailored for mobile GPU inference. It runs at a speed of 200-1000+ FPS on flagship devices. This super-realtime performance enables it to be applied to any augmented reality pipeline that requires an accurate facial region of interest as an input for task-specific models, such as 2D/3D facial keypoint or geometry estimation, facial features or expression classification, and face region segmentation
+
+## Links to references
+
+Github
+
+https://github.com/tensorflow/tfjs-models/tree/master/blazeface
+
+NPM package
+
+https://www.npmjs.com/package/@tensorflow-models/blazeface
 
 ## Vue Installation
 
