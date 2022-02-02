@@ -40,6 +40,8 @@ Install the default dependencies by running the following command.
 ## Sample video
 
 
+<img src="./doc/goggle-placement.gif" width="700" height="400" />
+
 
 
 
